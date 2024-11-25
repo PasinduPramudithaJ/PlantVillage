@@ -119,6 +119,6 @@ def validate_model(model, val_loader, criterion):
     print(f"Validation Accuracy: {100 * correct / total:.2f}%")
 
 # Train and save the model
-train_model(model, train_loader, val_loader, criterion, optimizer, num_epochs=10)
+train_model(model, train_loader, val_loader, criterion, optimizer, num_epochs=20)
 torch.save(model.state_dict(), "rcnn_plant_disease.pth")
 print("Model saved as rcnn_plant_disease.pth")
